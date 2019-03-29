@@ -1,26 +1,28 @@
 <?php
 
-factory(\App\User::class)->create();
-factory(\App\User::class)->create();
-factory(\App\User::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
-factory(\App\Project::class)->create();
+// NOTE: uncomment to create some users and projects
+// factory(\App\User::class)->create();
+// factory(\App\User::class)->create();
+// factory(\App\User::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
+// factory(\App\Project::class)->create();
 
+// NOTE: uncomment to listen to the updating event raised by the project
 // $project = \App\Project::first();
 // $project->update([
 //     'title' => 'updated'
 // ]);
 
-
-$project = \App\Project::first();
-$project->users()->sync([1,2]);
-
-dd('ok');
+// NOTE: this is the syncing issue
+// $project = \App\Project::first();
+// $project->users()->sync([1,2]);
+//
+// dd('ok');
 
 
 /*

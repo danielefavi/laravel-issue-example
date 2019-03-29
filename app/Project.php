@@ -8,8 +8,6 @@ class Project extends Model
 {
     protected $guarded = [];
 
-
-
     public static function boot()
     {
         parent::boot();
@@ -18,8 +16,6 @@ class Project extends Model
             dd('updating event has been fired!');
         });
     }
-
-
 
     public function users()
     {
