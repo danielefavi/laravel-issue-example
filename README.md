@@ -6,8 +6,8 @@ For more info [https://github.com/laravel/framework/issues/28050](https://github
 After the installation open the file **web.php** and uncomment the code to check the issue.
 
 # Installation
-- set your **.env** file
 - `git clone https://github.com/danielefavi/laravel-issue-example.git`
 - `composer install`
+- set your **.env** file
 - `php artisan migrate`
 - `php artisan key:generate`
