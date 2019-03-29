@@ -21,8 +21,11 @@
 // NOTE: this is the syncing issue
 // $project = \App\Project::first();
 // $project->users()->sync([1,2]);
-//
-// dd('ok');
+// $project->users()->attach([3]);
+// $project->users()->detach([3]);
+// $project->users()->detach([1,2]);
+
+dd('ok');
 
 
 /*

@@ -10,8 +10,9 @@ class ProjectUser extends Pivot
     {
         parent::boot();
 
-        static::attaching(function ($item) {
-            dd('syncing event has been fired!');
+        static::saving(function ($item)  {
+            dd('saving on SYNC!');
+            dd($item);
         });
     }
 }
