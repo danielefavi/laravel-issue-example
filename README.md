@@ -1,4 +1,4 @@
-# laravel-issue-example
+# Laravel 5.8 syncing / attaching / detaching events
 Example for the issue: Laravel 5.8 and syncing event: Call to undefined method exception #28050
 
 The release notes were misleading and they have been changed [https://github.com/laravel/docs/pull/5096](https://github.com/laravel/docs/pull/5096).
@@ -12,7 +12,7 @@ For more info [https://github.com/laravel/framework/issues/28050](https://github
 - `php artisan migrate`
 - `php artisan key:generate`
 
-# Laravel 5.8 syncing / attaching / detaching events
+# Detailed explanation
 On Laravel 5.8, when you are using the methods `sync`, `attach` or `detach` is going to be fired the appropriate model events (creating, updating, saving, ...) for the called action. Note that using `sync`, `attach` or `detach` is not going to fire any event like *syncing*, *attaching* or *detaching*.
 
 More specifically, the sequence of events fired for each element passed to the `sync` method are:
