@@ -10,9 +10,20 @@ class ProjectUser extends Pivot
     {
         parent::boot();
 
-        static::saving(function ($item)  {
-            dd('saving on SYNC!');
-            dd($item);
-        });
+        $events = [
+            'retrieved', 'creating', 'created', 'updating', 'updated',
+            'saving', 'saved', // 'restoring', 'restored',
+            'deleting', 'deleted', // 'forceDeleted',
+        ];
+
+        foreach($events as $event) {
+            static::$event(function ($item) use ($event) {
+                echo "<b>{$event}</b> has been fired!<br>";
+            });
+        }
+
+        // static::saving(function ($item)  {
+        //     dd($item);
+        // });
     }
 }
