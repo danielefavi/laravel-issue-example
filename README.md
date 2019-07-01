@@ -1,5 +1,5 @@
 # Laravel 5.8 syncing / attaching / detaching events
-Example for the issue: **Laravel 5.8 and syncing event: Call to undefined method exception #28050*
+Example for the issue: **Laravel 5.8 and syncing event: Call to undefined method exception #28050**
 
 The release notes were misleading and they have been changed [https://github.com/laravel/docs/pull/5096](https://github.com/laravel/docs/pull/5096).
 
